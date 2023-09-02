@@ -29,7 +29,10 @@ const ContactLinks = () => {
         onMouseEnter={() => setActiveLink('Resume')}
         onMouseLeave={() => setActiveLink('')}
       >
-        <a href="https://docs.google.com/document/d/1Cu-IVmlMHJjUM9Rj83lHkBJsjwSEZxZycZYiSESzaFo/export?format=pdf" download className="link-content">
+        <a 
+          href="/files/Muna_Toktobolotova_Resume.pdf" 
+          download 
+          className="link-content">
           <FontAwesomeIcon icon={faFileAlt} size={iconSize} />
           {activeLink === 'Resume' && <span className="link-text">Resume</span>}
         </a>
