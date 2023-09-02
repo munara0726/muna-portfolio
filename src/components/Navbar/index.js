@@ -40,7 +40,7 @@ function Navbar() {
     <header>
       <div className="container">
         <a className="title-font" href="#about">
-          Munara Toktobolotova
+          Muna Toktobolotova
         </a>
         {isMobile ? (
           <div ref={menuRef}>
