@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faFileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './ContactLinks.css';
 
 const ContactLinks = () => {
@@ -45,6 +45,18 @@ const ContactLinks = () => {
           className="link-content">
           <FontAwesomeIcon icon={faLinkedin} size={iconSize} />
           {activeLink === 'LinkedIn' && <span className="link-text">LinkedIn</span>}
+        </a>
+      </div>
+      <div
+        className="contact-link"
+        onMouseEnter={() => setActiveLink('Email')}
+        onMouseLeave={() => setActiveLink('')}
+      >
+        <a 
+          href="mailto:munara.qa@gmail.com" 
+          className="link-content">
+          <FontAwesomeIcon icon={faEnvelope} size={iconSize} />
+          {activeLink === 'Email' && <span className="link-text">Email</span>}
         </a>
       </div>
     </div>
